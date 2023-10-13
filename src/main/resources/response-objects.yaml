@@ -1,0 +1,15 @@
+DemoXmlResponseObject:
+  type: object
+  properties:
+    message:
+      type: string
+    urn:
+      description: A generic URN
+      type: string
+      format: urn
+      pattern: ^urn:com.leif:[a-zA-Z0-9]+:field1:field2:field3:[A-G]{3}[1-4]{2}$
+      example: urn:com.leif:environment:field1:field2:field3:CAB44
+    specialNumber:
+      description: A special number
+      type: number
+      example: 10

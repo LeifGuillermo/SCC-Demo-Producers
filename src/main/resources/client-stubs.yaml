@@ -1,0 +1,22 @@
+openapi: 3.0.3
+info:
+  title: Producer API
+  version: 1.0.0
+paths:
+  /json:
+    get:
+      responses:
+        200:
+          description: Returns a message in JSON format
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+  /xml:
+    get:
+      responses:
+        200:
+          $ref: 'responses.yaml#/200-XmlResponse'

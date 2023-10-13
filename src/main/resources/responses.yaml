@@ -1,0 +1,6 @@
+200-XmlResponse:
+  description: Returns a message in XML format
+  content:
+    application/xml:
+      schema:
+        $ref: 'response-objects.yaml#/DemoXmlResponseObject'
